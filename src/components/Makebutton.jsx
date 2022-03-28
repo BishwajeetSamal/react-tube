@@ -13,7 +13,9 @@ function Makebutton(props) {
           fontSize: "1rem",
           width: "100%",
           borderStyle: "none",
+          borderRadius: "16px",
         }}
+        onClick={props.data}
       >
         {props.name}
       </button>
