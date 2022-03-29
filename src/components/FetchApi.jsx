@@ -35,8 +35,7 @@ class FetchApi extends Component {
                     <tr>
                       <td>{items.id}</td>
                       <td>
-                        {items.first_name}
-                        {items.last_name}
+                        {items.first_name} {items.last_name}
                       </td>
                       <td> {items.email}</td>
                       <td>
