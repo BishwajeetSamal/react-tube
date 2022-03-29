@@ -21,7 +21,7 @@ function Edittext() {
   }
 
   return (
-    <div>
+    <div style={{ marginTop: "10rem" }}>
       <textarea
         name=""
         id=""
