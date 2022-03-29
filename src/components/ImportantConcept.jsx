@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Makebutton from "./Makebutton";
-import Picker from "emoji-picker-react";
-import { logDOM } from "@testing-library/react";
 export default class DriveCar extends Component {
   constructor() {
     super();
@@ -23,18 +21,13 @@ export default class DriveCar extends Component {
     if (this.state.accelerate === 100) {
       console.warn("component DID update");
       this.setState({
-        accelerate: 110,
+        accelerate: this.state.accelerate + 10,
         setEmoji: "😎",
       });
-    }
-  }
-
-  componentWillUpdate() {
-    if (this.state.accelerate === 200) {
-      console.warn("component Will update");
+    } else if (this.state.accelerate > 110) {
       this.setState({
         accelerate: 10,
-        setEmoji: "😎",
+        setEmoji: "😄",
       });
     }
   }

@@ -5,7 +5,7 @@ function Navbar() {
   var ImgAddr = process.env.PUBLIC_URL + "/images/train.jpeg";
   return (
     <>
-      <h1>{name} Test</h1>
+      <h1>{name}</h1>
       <img src={ImgAddr} alt="Train Image" />
     </>
   );
