@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Edittext from "./components/Edittext";
 import Profile from "./Profile";
 import Profile1 from "./components/Profile1";
-import ImportantConcept from "./components/ImportantConcept";
+import DriveCar from "./components/ImportantConcept";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 function App() {
   return (
@@ -62,14 +62,14 @@ function App() {
           }}
           to="/ImportantConcept"
         >
-          ImportantConcept
+          Drive-car
         </Link>
         <Routes>
           <Route path="/" element={<Navbar />} />
           <Route path="/Edittext" element={<Edittext />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/Profile1" element={<Profile1 />} />
-          <Route path="/ImportantConcept" element={<ImportantConcept />} />
+          <Route path="/ImportantConcept" element={<DriveCar />} />
         </Routes>
       </Router>
     </>
