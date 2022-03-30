@@ -16,12 +16,11 @@ function Edittext() {
   }
 
   function handleOnChange(e) {
-    console.log("Changing");
     setText(e.target.value);
   }
 
   return (
-    <div>
+    <div style={{ marginTop: "10rem" }}>
       <textarea
         name=""
         id=""
