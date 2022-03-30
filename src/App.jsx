@@ -1,16 +1,10 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Edittext from "./components/Edittext";
-import Profile from "./Profile";
-import Profile1 from "./components/Profile1";
-import DriveCar from "./components/ImportantConcept";
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import FetchApi from "./components/FetchApi";
+import NavbarPage from "./components/NavbarPage";
 function App() {
   return (
     <>
-      <Router>
-        <Link
+      <NavbarPage />
+      {/* <Link
           style={{
             textDecoration: "none",
             marginRight: "1rem",
@@ -75,16 +69,7 @@ function App() {
           to="/FetchApi"
         >
           FetchAPI
-        </Link>
-        <Routes>
-          <Route path="/" element={<Navbar />} />
-          <Route path="/Edittext" element={<Edittext />} />
-          <Route path="/Profile" element={<Profile />} />
-          <Route path="/Profile1" element={<Profile1 />} />
-          <Route path="/ImportantConcept" element={<DriveCar />} />
-          <Route path="/FetchApi" element={<FetchApi />} />
-        </Routes>
-      </Router>
+        </Link> */}
     </>
   );
 }

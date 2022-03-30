@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import CSS from "../css/index.css";
+import { Table } from "react-bootstrap";
 class FetchApi extends Component {
   constructor() {
     super();
@@ -22,7 +23,7 @@ class FetchApi extends Component {
       <div>
         <h1>Fetch Api Data</h1>
         <div style={{ justifyContent: "center" }}>
-          <table>
+          <Table>
             <thead>
               <th>Id</th>
               <th>Name</th>
@@ -45,7 +46,7 @@ class FetchApi extends Component {
                   ))
                 : null}
             </tbody>
-          </table>
+          </Table>
         </div>
       </div>
     );
