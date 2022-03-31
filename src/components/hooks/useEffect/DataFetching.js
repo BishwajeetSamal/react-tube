@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import DataFetchById from "./DataFetchById";
 
 function DataFetching() {
   const [posts, setPosts] = useState([]);
@@ -15,6 +16,7 @@ function DataFetching() {
   }, []);
   return (
     <div>
+      <DataFetchById />
       <ul>
         {posts.map((post) => (
           <li key={post.id}>{post.title}</li>
