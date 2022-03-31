@@ -40,37 +40,8 @@ function NavbarPage() {
               <Nav.Link href="/ImportantConcept">Drive Car</Nav.Link>
               <Nav.Link href="/FetchApi">Fetch Api</Nav.Link>
               <NavDropdown title="Hooks" id="navbarScrollingDropdown">
-                {["end"].map((direction) => (
-                  <NavDropdown
-                    as={ButtonGroup}
-                    key={direction}
-                    id={`dropdown-button-drop-${direction}`}
-                    drop={direction}
-                    variant="secondary"
-                    title={`useState() `}
-                  >
-                    <NavDropdown.Item eventKey="1" href="/ClassCounter">
-                      useState() By Class
-                    </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="2">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="3">
-                      Something else here
-                    </NavDropdown.Item>
-                    <Dropdown.Divider />
-                    <NavDropdown.Item eventKey="4">
-                      Separated link
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                ))}
-                <NavDropdown.Item href="#action3">
-                  {/* <NavDropdown title="useState()" id="navbarScrollingDropdown">
-                    
-                    <NavDropdown.Item href="#action5">
-                      useState()
-                    </NavDropdown.Item>
-                  </NavDropdown> */}
+                <NavDropdown.Item href="ClassCounter">
+                  useState()
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">

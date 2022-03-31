@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import HookCounter from "./HookCounter";
+import HookCounterTwo from "./HookCounterTwo";
 
 export class ClassCounter extends Component {
   constructor(props) {
@@ -27,6 +28,10 @@ export class ClassCounter extends Component {
         <div style={{ margin: "2rem 38rem", display: "flex" }}>
           <p>Using Function useState() hook{"=>"}</p>
           <HookCounter />
+        </div>
+        <div style={{ margin: "2rem 38rem", border: "1px solid black" }}>
+          <p>Using Function useState() hook{"=>"}</p>
+          <HookCounterTwo />
         </div>
       </div>
     );
