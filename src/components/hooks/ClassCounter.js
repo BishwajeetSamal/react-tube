@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import HookCounter from "./HookCounter";
 
 export class ClassCounter extends Component {
   constructor(props) {
@@ -17,12 +18,16 @@ export class ClassCounter extends Component {
   render() {
     return (
       <div>
-        <button
-          style={{ margin: "2rem 45rem" }}
-          onClick={() => this.incrementCount()}
-        >
-          Count {this.state.count}
-        </button>
+        <div style={{ margin: "2rem 40rem", display: "flex" }}>
+          <p>Using Class State (this.state) {"=>"}</p>
+          <button onClick={() => this.incrementCount()}>
+            Count {this.state.count}
+          </button>
+        </div>
+        <div style={{ margin: "2rem 38rem", display: "flex" }}>
+          <p>Using Function useState() hook{"=>"}</p>
+          <HookCounter />
+        </div>
       </div>
     );
   }
