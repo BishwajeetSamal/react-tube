@@ -6,6 +6,8 @@ import Profile1 from "./Profile1";
 import DriveCar from "./ImportantConcept";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FetchApi from "./FetchApi";
+import ClassCounter from "./hooks/ClassCounter";
+import "../css/index.css";
 import {
   Navbar,
   Container,
@@ -14,6 +16,9 @@ import {
   Form,
   FormControl,
   Button,
+  DropdownButton,
+  ButtonGroup,
+  Dropdown,
 } from "react-bootstrap";
 function NavbarPage() {
   return (
@@ -34,10 +39,38 @@ function NavbarPage() {
               <Nav.Link href="/Profile1">Profile 1</Nav.Link>
               <Nav.Link href="/ImportantConcept">Drive Car</Nav.Link>
               <Nav.Link href="/FetchApi">Fetch Api</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
+              <NavDropdown title="Hooks" id="navbarScrollingDropdown">
+                {["end"].map((direction) => (
+                  <NavDropdown
+                    as={ButtonGroup}
+                    key={direction}
+                    id={`dropdown-button-drop-${direction}`}
+                    drop={direction}
+                    variant="secondary"
+                    title={`useState() `}
+                  >
+                    <NavDropdown.Item eventKey="1" href="/ClassCounter">
+                      useState() By Class
+                    </NavDropdown.Item>
+                    <NavDropdown.Item eventKey="2">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Item eventKey="3">
+                      Something else here
+                    </NavDropdown.Item>
+                    <Dropdown.Divider />
+                    <NavDropdown.Item eventKey="4">
+                      Separated link
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                ))}
+                <NavDropdown.Item href="#action3">
+                  {/* <NavDropdown title="useState()" id="navbarScrollingDropdown">
+                    
+                    <NavDropdown.Item href="#action5">
+                      useState()
+                    </NavDropdown.Item>
+                  </NavDropdown> */}
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">
@@ -65,6 +98,7 @@ function NavbarPage() {
           <Route path="/Profile1" element={<Profile1 />} />
           <Route path="/ImportantConcept" element={<DriveCar />} />
           <Route path="/FetchApi" element={<FetchApi />} />
+          <Route path="/ClassCounter" element={<ClassCounter />} />
         </Routes>
       </Router>
     </>
