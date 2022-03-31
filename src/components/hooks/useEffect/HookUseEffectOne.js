@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import HookMouse from "./HookMouse";
+import IntervalHookCounter from "./IntervalHookCounter";
+import MouseContainer from "./MouseContainer";
+import DataFetching from "./DataFetching";
 function HookUseEffectOne() {
   const [count, setCount] = useState(0);
   //  When we specify useEffect, we are basically requesting REACT to execute the function that is passed as an arguement
@@ -20,9 +22,14 @@ function HookUseEffectOne() {
 
         <button onClick={() => setCount(count + 1)}>Click {count} times</button>
       </div>
-
+      {/* <div>
+        <MouseContainer />
+      </div> */}
       <div>
-        <HookMouse />
+        <IntervalHookCounter />
+      </div>
+      <div style={{ margin: "2rem 38rem", border: "1px solid black" }}>
+        <DataFetching />
       </div>
     </div>
   );
