@@ -9,7 +9,7 @@ function HookCounterTwo() {
 previous value which can be accessible from a function inside the setCount Arguement */
     }
     for (let i = 1; i <= 5; i++) {
-      setCount((prevVal) => prevVal + 1);
+      setCount((prevCount) => prevCount + 1);
     }
   };
   return (
