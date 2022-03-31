@@ -7,6 +7,7 @@ import DriveCar from "./ImportantConcept";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FetchApi from "./FetchApi";
 import ClassCounter from "./hooks/ClassCounter";
+import HookUseEffectOne from "./hooks/useEffect/HookUseEffectOne";
 import "../css/index.css";
 import {
   Navbar,
@@ -43,6 +44,9 @@ function NavbarPage() {
                 <NavDropdown.Item href="ClassCounter">
                   useState()
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/HookUseEffectOne">
+                  useEffect()
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">
                   Something else here
@@ -70,6 +74,7 @@ function NavbarPage() {
           <Route path="/ImportantConcept" element={<DriveCar />} />
           <Route path="/FetchApi" element={<FetchApi />} />
           <Route path="/ClassCounter" element={<ClassCounter />} />
+          <Route path="/HookUseEffectOne" element={<HookUseEffectOne />} />
         </Routes>
       </Router>
     </>
