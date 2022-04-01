@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FetchApi from "./FetchApi";
 import ClassCounter from "./hooks/ClassCounter";
 import HookUseEffectOne from "./hooks/useEffect/HookUseEffectOne";
+import UseReducer from "./hooks/UseReducer";
 import "../css/index.css";
 import {
   Navbar,
@@ -50,7 +51,7 @@ function NavbarPage() {
                 <NavDropdown.Item href="/HookUseContext">
                   useContext()
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/HookUseContext">
+                <NavDropdown.Item href="/UseReducer">
                   useReducer()
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -81,6 +82,7 @@ function NavbarPage() {
           <Route path="/FetchApi" element={<FetchApi />} />
           <Route path="/ClassCounter" element={<ClassCounter />} />
           <Route path="/HookUseEffectOne" element={<HookUseEffectOne />} />
+          <Route path="/UseReducer" element={<UseReducer />} />
         </Routes>
       </Router>
     </>
