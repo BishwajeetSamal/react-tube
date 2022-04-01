@@ -1,6 +1,6 @@
 import React from "react";
 import MultipleUseReducer from "./MultipleUseReducer";
-
+import UseReducer1 from "./UseReducer1";
 import UseReducer2 from "./UseReducer2";
 
 function UseReducer() {
@@ -16,6 +16,10 @@ function UseReducer() {
       <div>
         <hr />
         <MultipleUseReducer />
+      </div>
+      <div>
+        <hr />
+        <UseReducer1 />
       </div>
     </div>
   );

@@ -48,7 +48,9 @@ function UseReducer1() {
             <p>It is made by the help of the object.</p>
           </h2>
         </div>
-        <div style={{ marginTop: "1rem" }}>Count -: {countTest}</div>
+        <div style={{ marginTop: "1rem" }}>
+          Count -: {countTest.firstCounter}
+        </div>
         <div style={{ display: "flex", marginLeft: "1rem" }}>
           <Makebutton
             name="Reset"
@@ -76,11 +78,11 @@ function UseReducer1() {
         <div style={{ display: "flex", marginLeft: "1rem" }}>
           <Makebutton
             name="-5"
-            data={() => dispatch({ type: "decrement5", value: 5 })}
+            data={() => dispatchTest({ type: "decrement5", value: 5 })}
           />
         </div>
       </div>
-      <div>
+      {/* <div>
         <h1>Seperate Div'S</h1>
         <div style={{ marginTop: "1rem" }}>Count -: {cntCtext.countValue}</div>
 
@@ -102,7 +104,7 @@ function UseReducer1() {
             data={() => cntCtext.countDispatch("decrement")}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
