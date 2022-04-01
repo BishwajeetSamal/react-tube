@@ -36,13 +36,14 @@ function Edittext() {
       >
         {text}
       </textarea>
-
-      <Makebutton name="Convert to Uppercase" data={clicktoUpper} />
-      <div style={{ marginLeft: "8px" }}>
-        <Makebutton name="Convert to Lowercase" data={clicktoLower} />
-      </div>
-      <div style={{ marginLeft: "28px" }}>
-        <Makebutton name="Clear Text" data={clearText} />
+      <div style={{ display: "flex", marginLeft: "22rem" }}>
+        <Makebutton name="Convert to Uppercase" data={clicktoUpper} />
+        <div style={{ marginLeft: "8px" }}>
+          <Makebutton name="Convert to Lowercase" data={clicktoLower} />
+        </div>
+        <div style={{ marginLeft: "28px" }}>
+          <Makebutton name="Clear Text" data={clearText} />
+        </div>
       </div>
     </div>
   );

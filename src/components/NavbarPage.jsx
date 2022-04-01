@@ -50,6 +50,9 @@ function NavbarPage() {
                 <NavDropdown.Item href="/HookUseContext">
                   useContext()
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/HookUseContext">
+                  useReducer()
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">
                   Something else here

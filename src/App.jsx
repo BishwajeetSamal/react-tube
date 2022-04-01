@@ -8,11 +8,13 @@ function App() {
     <>
       <NavbarPage />
 
-      <UserContext.Provider value={"Bishwajeet Samal"}>
+      {/* To see the useContext() hook then uncomment the code below */}
+      {/* ========================================================== */}
+      {/* <UserContext.Provider value={"Bishwajeet Samal"}>
         <UserChannel.Provider value="BishwaRano">
           <HookUseContext />
         </UserChannel.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
     </>
   );
 }
