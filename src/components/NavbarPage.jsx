@@ -47,6 +47,9 @@ function NavbarPage() {
                 <NavDropdown.Item href="/HookUseEffectOne">
                   useEffect()
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/HookUseContext">
+                  useContext()
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">
                   Something else here
