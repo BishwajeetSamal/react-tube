@@ -9,22 +9,19 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "increment":
       return { ...state, firstCounter: state.firstCounter + 1 };
-      break;
 
     case "decrement":
       return { ...state, firstCounter: state.firstCounter - 1 };
-      break;
 
     case "reset":
       return initialState;
-      break;
+
     case "increment2":
       return { ...state, secondCounter: state.secondCounter + action.value };
-      break;
 
     case "decrement2":
       return { ...state, secondCounter: state.secondCounter - action.value };
-      break;
+
     default:
       return state;
   }

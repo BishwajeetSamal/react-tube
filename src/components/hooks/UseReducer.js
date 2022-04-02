@@ -6,9 +6,6 @@ import UseReducer2 from "./UseReducer2";
 function UseReducer() {
   return (
     <div>
-      {/* <div>
-        <UseReducer1 />
-      </div> */}
       <div>
         <hr />
         <UseReducer2 />
@@ -19,7 +16,6 @@ function UseReducer() {
       </div>
       <div>
         <hr />
-        <UseReducer1 />
       </div>
     </div>
   );

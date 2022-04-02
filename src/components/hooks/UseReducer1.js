@@ -9,22 +9,19 @@ const reducer = (state, action) => {
   switch (action.type) {
     case "increment":
       return { firstCounter: state.firstCounter + 1 };
-      break;
 
     case "decrement":
       return { firstCounter: state.firstCounter - 1 };
-      break;
 
     case "reset":
       return initialState;
-      break;
+
     case "increment5":
       return { firstCounter: state.firstCounter + action.value };
-      break;
 
     case "decrement5":
       return { firstCounter: state.firstCounter - action.value };
-      break;
+
     default:
       return state;
   }
@@ -82,29 +79,37 @@ function UseReducer1() {
           />
         </div>
       </div>
-      {/* <div>
-        <h1>Seperate Div'S</h1>
+
+      <div
+        style={{
+          border: "5px dashed black",
+          marginLeft: "25rem",
+          display: "flex",
+          padding: "3rem",
+        }}
+      >
+        <h1>Seperate Div'S (Using useContext() and useReducer())</h1>
         <div style={{ marginTop: "1rem" }}>Count -: {cntCtext.countValue}</div>
 
-        <div style={{ display: "flex", marginLeft: "1rem" }}>
+        <div style={{ marginLeft: "1rem" }}>
           <Makebutton
             name="Reset"
             data={() => cntCtext.countDispatch("reset")}
           />
         </div>
-        <div style={{ display: "flex", marginLeft: "1rem" }}>
+        <div style={{ marginLeft: "1rem" }}>
           <Makebutton
             name="+"
             data={() => cntCtext.countDispatch("increment")}
           />
         </div>
-        <div style={{ display: "flex", marginLeft: "1rem" }}>
+        <div style={{ marginLeft: "1rem" }}>
           <Makebutton
             name="-"
             data={() => cntCtext.countDispatch("decrement")}
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

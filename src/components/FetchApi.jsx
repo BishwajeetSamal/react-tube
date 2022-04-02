@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import CSS from "../css/index.css";
 import { Table } from "react-bootstrap";
 class FetchApi extends Component {
   constructor() {

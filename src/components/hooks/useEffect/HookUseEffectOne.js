@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import IntervalHookCounter from "./IntervalHookCounter";
-import MouseContainer from "./MouseContainer";
 import DataFetching from "./DataFetching";
-import DataFetchById from "./DataFetchById";
+
 function HookUseEffectOne() {
   const [count, setCount] = useState(0);
   //  When we specify useEffect, we are basically requesting REACT to execute the function that is passed as an arguement
