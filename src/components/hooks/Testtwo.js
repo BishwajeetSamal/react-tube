@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { createProvider } from "./Testone";
 import HookUseContext from "./HookUseContext";
+import DataFetchingOne from "./DataFetchingOne";
 export const UserContext = React.createContext();
 export const UserChannel = React.createContext();
 function Testtwo() {
@@ -15,6 +16,11 @@ function Testtwo() {
         </UserChannel.Provider>
       </UserContext.Provider>
       {doubled + " "}
+      <hr />
+      <div>
+        <h2>This is by using State</h2>
+        <DataFetchingOne />
+      </div>
     </div>
   );
 }
