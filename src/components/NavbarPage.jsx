@@ -9,6 +9,7 @@ import FetchApi from "./FetchApi";
 import ClassCounter from "./hooks/ClassCounter";
 import HookUseEffectOne from "./hooks/useEffect/HookUseEffectOne";
 import UseReducer from "./hooks/UseReducer";
+import Testtwo from "./hooks/Testtwo";
 import "../css/index.css";
 import {
   Navbar,
@@ -45,7 +46,7 @@ function NavbarPage() {
                 <NavDropdown.Item href="/HookUseEffectOne">
                   useEffect()
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/HookUseContext">
+                <NavDropdown.Item href="/Testtwo">
                   useContext()
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/UseReducer">
@@ -80,6 +81,7 @@ function NavbarPage() {
           <Route path="/ClassCounter" element={<ClassCounter />} />
           <Route path="/HookUseEffectOne" element={<HookUseEffectOne />} />
           <Route path="/UseReducer" element={<UseReducer />} />
+          <Route path="/Testtwo" element={<Testtwo />} />
         </Routes>
       </Router>
     </>
