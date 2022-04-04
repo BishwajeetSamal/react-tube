@@ -12,6 +12,7 @@ import UseReducer from "./hooks/UseReducer";
 import Testtwo from "./hooks/Testtwo";
 import UseCallback from "./hooks/useCallback/UseCallback";
 import UseMemo from "./hooks/useMemo/UseMemo";
+import UseRef from "./hooks/useRef/UseRef";
 import "../css/index.css";
 import {
   Navbar,
@@ -58,10 +59,7 @@ function NavbarPage() {
                   useCallback()
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/UseMemo">useMemo()</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
+                <NavDropdown.Item href="/UseRef">useRef()</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">
@@ -90,6 +88,7 @@ function NavbarPage() {
           <Route path="/Testtwo" element={<Testtwo />} />
           <Route path="/UseCallback" element={<UseCallback />} />
           <Route path="/UseMemo" element={<UseMemo />} />
+          <Route path="/UseRef" element={<UseRef />} />
         </Routes>
       </Router>
     </>
