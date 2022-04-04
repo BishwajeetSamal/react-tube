@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { createProvider } from "./Testone";
 import HookUseContext from "./HookUseContext";
 import DataFetchingOne from "./DataFetchingOne";
+import DataFetchingTwoByReducer from "./DataFetchingTwoByReducer";
 export const UserContext = React.createContext();
 export const UserChannel = React.createContext();
 function Testtwo() {
@@ -20,6 +21,9 @@ function Testtwo() {
       <div>
         <h2>This is by using State</h2>
         <DataFetchingOne />
+        <hr />
+        <h2>This is by using useReducer()</h2>
+        <DataFetchingTwoByReducer />
       </div>
     </div>
   );
