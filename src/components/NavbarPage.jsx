@@ -11,6 +11,7 @@ import HookUseEffectOne from "./hooks/useEffect/HookUseEffectOne";
 import UseReducer from "./hooks/UseReducer";
 import Testtwo from "./hooks/Testtwo";
 import UseCallback from "./hooks/useCallback/UseCallback";
+import UseMemo from "./hooks/useMemo/UseMemo";
 import "../css/index.css";
 import {
   Navbar,
@@ -56,6 +57,7 @@ function NavbarPage() {
                 <NavDropdown.Item href="/UseCallback">
                   useCallback()
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/UseMemo">useMemo()</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">
                   Something else here
@@ -87,6 +89,7 @@ function NavbarPage() {
           <Route path="/UseReducer" element={<UseReducer />} />
           <Route path="/Testtwo" element={<Testtwo />} />
           <Route path="/UseCallback" element={<UseCallback />} />
+          <Route path="/UseMemo" element={<UseMemo />} />
         </Routes>
       </Router>
     </>
