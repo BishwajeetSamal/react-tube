@@ -13,6 +13,7 @@ import Testtwo from "./hooks/Testtwo";
 import UseCallback from "./hooks/useCallback/UseCallback";
 import UseMemo from "./hooks/useMemo/UseMemo";
 import UseRef from "./hooks/useRef/UseRef";
+import RenderHOC from "./HOC/RenderHOC";
 import "../css/index.css";
 import {
   Navbar,
@@ -42,6 +43,7 @@ function NavbarPage() {
               <Nav.Link href="/Profile1">Profile 1</Nav.Link>
               <Nav.Link href="/ImportantConcept">Drive Car</Nav.Link>
               <Nav.Link href="/FetchApi">Fetch Api</Nav.Link>
+              <Nav.Link href="/RenderHOC">RenderHOC</Nav.Link>
               <NavDropdown title="Hooks" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="ClassCounter">
                   useState()
@@ -89,6 +91,7 @@ function NavbarPage() {
           <Route path="/UseCallback" element={<UseCallback />} />
           <Route path="/UseMemo" element={<UseMemo />} />
           <Route path="/UseRef" element={<UseRef />} />
+          <Route path="/RenderHOC" element={<RenderHOC />} />
         </Routes>
       </Router>
     </>
