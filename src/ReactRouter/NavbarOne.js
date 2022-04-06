@@ -9,12 +9,15 @@ function NavbarOne() {
   };
   return (
     <div>
-      <nav>
+      <nav className="primary-nav">
         <NavLink style={navStyleLinks} to="/home">
           Home
         </NavLink>
         <NavLink style={navStyleLinks} to="/about">
           About
+        </NavLink>
+        <NavLink style={navStyleLinks} to="/products">
+          Products
         </NavLink>
       </nav>
     </div>
