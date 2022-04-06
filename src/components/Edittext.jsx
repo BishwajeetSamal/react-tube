@@ -36,13 +36,7 @@ function Edittext() {
       >
         {text}
       </textarea>
-
-      <div
-        style={{
-          display: "flex",
-          marginLeft: "22rem",
-        }}
-      >
+      <div style={{ display: "flex", marginLeft: "22rem" }}>
         <Makebutton name="Convert to Uppercase" data={clicktoUpper} />
         <div style={{ marginLeft: "8px" }}>
           <Makebutton name="Convert to Lowercase" data={clicktoLower} />

@@ -6,6 +6,15 @@ import Profile1 from "./Profile1";
 import DriveCar from "./ImportantConcept";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import FetchApi from "./FetchApi";
+import ClassCounter from "./hooks/ClassCounter";
+import HookUseEffectOne from "./hooks/useEffect/HookUseEffectOne";
+import UseReducer from "./hooks/UseReducer";
+import Testtwo from "./hooks/Testtwo";
+import UseCallback from "./hooks/useCallback/UseCallback";
+import UseMemo from "./hooks/useMemo/UseMemo";
+import UseRef from "./hooks/useRef/UseRef";
+import RenderHOC from "./HOC/RenderHOC";
+import "../css/index.css";
 import {
   Navbar,
   Container,
@@ -34,15 +43,25 @@ function NavbarPage() {
               <Nav.Link href="/Profile1">Profile 1</Nav.Link>
               <Nav.Link href="/ImportantConcept">Drive Car</Nav.Link>
               <Nav.Link href="/FetchApi">Fetch Api</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
+              <Nav.Link href="/RenderHOC">RenderHOC</Nav.Link>
+              <NavDropdown title="Hooks" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="ClassCounter">
+                  useState()
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
+                <NavDropdown.Item href="/HookUseEffectOne">
+                  useEffect()
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/Testtwo">
+                  useContext()
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/UseReducer">
+                  useReducer()
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/UseCallback">
+                  useCallback()
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/UseMemo">useMemo()</NavDropdown.Item>
+                <NavDropdown.Item href="/UseRef">useRef()</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Form className="d-flex">
@@ -65,6 +84,14 @@ function NavbarPage() {
           <Route path="/Profile1" element={<Profile1 />} />
           <Route path="/ImportantConcept" element={<DriveCar />} />
           <Route path="/FetchApi" element={<FetchApi />} />
+          <Route path="/ClassCounter" element={<ClassCounter />} />
+          <Route path="/HookUseEffectOne" element={<HookUseEffectOne />} />
+          <Route path="/UseReducer" element={<UseReducer />} />
+          <Route path="/Testtwo" element={<Testtwo />} />
+          <Route path="/UseCallback" element={<UseCallback />} />
+          <Route path="/UseMemo" element={<UseMemo />} />
+          <Route path="/UseRef" element={<UseRef />} />
+          <Route path="/RenderHOC" element={<RenderHOC />} />
         </Routes>
       </Router>
     </>

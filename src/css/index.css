@@ -13,3 +13,16 @@ table {
 table tbody img {
   height: 50px;
 }
+
+.dropdown-menu.show {
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.dropdown-item {
+  color: rgb(214, 212, 212) !important;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(214, 212, 212) !important;
+  color: rgb(37, 37, 37) !important;
+}

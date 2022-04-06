@@ -18,6 +18,7 @@ export default class DriveCar extends Component {
   }
 
   componentDidUpdate() {
+    console.warn("componentDidUpdate");
     if (this.state.accelerate === 100) {
       console.warn("component DID update");
       this.setState({
