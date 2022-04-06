@@ -26,3 +26,17 @@ table tbody img {
   background-color: rgb(214, 212, 212) !important;
   color: rgb(37, 37, 37) !important;
 }
+
+nav {
+  background-color: aliceblue;
+  padding: 16px 32px;
+}
+nav a {
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: lightseagreen;
+}
