@@ -12,6 +12,7 @@ class classTimer extends Component {
 
   componentDidMount() {
     this.interval = setInterval(() => {
+      console.log(this.interval);
       this.setState((prevState) => ({ timer: prevState.timer + 1 }));
     }, 1000);
   }
@@ -24,7 +25,7 @@ class classTimer extends Component {
       <div>
         Class Timer = {this.state.timer}
         <button
-          onClick={() => clearInterval(this.interval)}
+          onClick={() => clearInterval(2)}
           style={{ display: "block", marginLeft: "46rem" }}
         >
           Clear Timer
