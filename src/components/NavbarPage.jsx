@@ -14,6 +14,7 @@ import UseCallback from "./hooks/useCallback/UseCallback";
 import UseMemo from "./hooks/useMemo/UseMemo";
 import UseRef from "./hooks/useRef/UseRef";
 import RenderHOC from "./HOC/RenderHOC";
+import RenderRedux from "./redux/RenderRedux";
 import "../css/index.css";
 import {
   Navbar,
@@ -63,6 +64,7 @@ function NavbarPage() {
                 <NavDropdown.Item href="/UseMemo">useMemo()</NavDropdown.Item>
                 <NavDropdown.Item href="/UseRef">useRef()</NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link href="/RenderRedux">Render Redux</Nav.Link>
             </Nav>
             <Form className="d-flex">
               <FormControl
@@ -92,6 +94,7 @@ function NavbarPage() {
           <Route path="/UseMemo" element={<UseMemo />} />
           <Route path="/UseRef" element={<UseRef />} />
           <Route path="/RenderHOC" element={<RenderHOC />} />
+          <Route path="/RenderRedux" element={<RenderRedux />} />
         </Routes>
       </Router>
     </>
