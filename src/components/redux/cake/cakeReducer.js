@@ -2,6 +2,7 @@ import { BUY_CAKE } from "./cakeTypes";
 const initialState = {
   numOfCakes: 10,
 };
+console.log("Reducer Called");
 const cakeReducer = (state = initialState, action) => {
   switch (action.type) {
     case BUY_CAKE:
